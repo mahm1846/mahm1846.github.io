@@ -1,0 +1,91 @@
+.thing {
+   
+   /*width: 125px;*/
+   width: 100%;
+   height: 40%;
+   background:  #668284;  /* #357;*/
+   margin-bottom: 0.0px;
+   opacity: 1;
+   border-radius: 0px ;
+
+   /* Shared animation proprties apply to all */
+   animation-name: pulse;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+
+/* These are the delays */
+.thing:nth-child(1) {animation-delay: 0.0s; }
+.thing:nth-child(2) {animation-delay: 0.5s; }
+.thing:nth-child(3) {animation-delay: 1.0s; }
+.thing:nth-child(4) {animation-delay: 1.5s; }
+.thing:nth-child(5) {animation-delay: 2.0s; }
+.thing:nth-child(6) {animation-delay: 2.5s; }
+
+/* Animation definition */
+@keyframes pulse {
+  50% { opacity: 0;}
+}
+
+
+.typography-example-1 {
+    /*background-image: linear-gradient(135deg, #723362, #9d223c);*/
+
+    background-color:  #9d223c;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    padding-left: .4em;
+    font-size: 3em; /* 1.8em; */
+    /*margin-top: 2.5rem;*/
+
+    margin-left: 10%;
+    /*height: 40px;*/
+    height: 100%;
+    border-radius: 0px ;
+}
+
+.typography-example-1 span {
+    opacity: 0.01;
+    /*transition: opacity 1300ms*/
+    animation: mymove10 2600ms infinite;
+}
+
+
+/*.typography-example-1 span:nth-child(1)  { transition-delay:  200ms }*/
+.typography-example-1 span:nth-child(1)  { animation-delay:  200ms} 
+.typography-example-1 span:nth-child(2)  { animation-delay: 2400ms }
+.typography-example-1 span:nth-child(3)  { animation-delay: 1600ms }
+.typography-example-1 span:nth-child(4)  { animation-delay:  600ms }
+.typography-example-1 span:nth-child(5)  { animation-delay: 1400ms }
+.typography-example-1 span:nth-child(6)  { animation-delay:  200ms }
+.typography-example-1 span:nth-child(7)  { animation-delay: 2000ms }
+.typography-example-1 span:nth-child(8)  { animation-delay:  1800ms }
+.typography-example-1 span:nth-child(9)  { animation-delay:  1400ms }
+.typography-example-1 span:nth-child(10) { animation-delay:   100ms }
+
+.typography-example-1:hover span { opacity: 1}
+
+@keyframes mymove10 {
+   50% {opacity: 1;}
+}
+
+.container1 {
+   width: 99%;
+   height: 80px;
+   /*background: aqua;*/
+   /*margin: auto;*/
+   padding-top: 60px;
+   /*margin-top: 50px;*/
+}
+   
+
+.one {
+   width: 10%;
+   height: 55px;
+   /*background: gray;*/
+   float: left;
+}                 
