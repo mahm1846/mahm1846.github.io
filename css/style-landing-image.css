@@ -1,0 +1,127 @@
+div#container {
+    //height:500px;width:500px;
+    height: auto;
+    width: auto;
+}
+
+
+
+img {
+    opacity: 0.5;
+    border-radius: 35%;
+}
+
+
+div.a {
+   width: 25px;
+   height:25px;
+   //background-color:gray; 
+   position:fixed;
+
+   border-radius: 25px;
+   transition: width 1s, height 1s;
+
+}
+.a:hover {
+   opacity: 1;
+   width: 100px;
+   height:100px;
+}
+
+div.b {
+   width: 25px;
+   height:25px;
+   //background-color:blue;
+   position:fixed;
+
+   border-radius: 25px;
+   transition: width 1s, height 1s;
+    
+}
+.b:hover {
+   opacity: 1;
+   width: 100px;
+   height:100px;
+}
+
+
+div.c {
+   width: 25px;
+   height:25px;
+   //background-color:green;
+   position:fixed;
+
+   
+   border-radius: 25px;
+   transition: width 1s, height 1s;
+
+}
+.c:hover {
+   opacity: 1;
+   width: 100px;
+   height:100px;
+}
+
+
+div.d {
+   width: 25px;
+   height:25px;
+   position:fixed;
+   border-radius: 25px;
+   transition: width 1s, height 1s;
+}
+.d:hover {
+   opacity: 1;
+   width: 100px;
+   height:100px;
+}
+
+
+div.e {
+   width: 25px;
+   height:25px;
+   position:fixed;
+   border-radius: 25px;
+   transition: width 1s, height 1s;
+}
+.e:hover {
+   opacity: 1;
+   width: 100px;
+   height:100px;
+}
+
+
+div.f {
+   width: 25px;
+   height:25px;
+   position:fixed;
+   border-radius: 25px;
+   transition: width 1s, height 1s;
+}
+.f:hover {
+   opacity: 1;
+   width: 100px;
+   height:100px;
+}
+
+
+@keyframes delayedShow {
+    100% {visibility: visible;}
+}
+
+
+#wrapper .text {
+   position:relative;
+   bottom:50px;
+   left:auto;
+   text-align:center;
+   visibility:hidden;
+   color: #FDEEF4; //pearl;
+   font-family: "Lucida Console", "Courier New", monospace;
+   font-size: 16px;
+}
+
+#wrapper:hover .text {
+   //visibility:visible;
+   animation: 0.5s linear 1s forwards delayedShow ;
+}
