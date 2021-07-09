@@ -13,7 +13,8 @@ body {
 .heading h1 {
     color: #CCCCFF; /*limegreen;*/
     font-size: 70px;
-    font-family:'Courier New', monospace ; 
+    font-family:'Courier New', monospace ;
+    text-shadow: 2px 2px 4px #f2e2cd;// #cccccc; // #999999; // #ffffff; // #000000; 
 }
 .heading h3 {
     color: wheat;
