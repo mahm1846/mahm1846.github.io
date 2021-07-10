@@ -5,10 +5,22 @@ div#container {
 }
 
 
+@keyframes glow {
+  from {
+       //  box-shadow:  0 0 10px -10px #aef4af; 
+       box-shadow:  0 0 5px -5px white; 
+  }
+  to {
+       // box-shadow:   0 0 10px 10px #aef4af;
+       box-shadow:   0 0 5px 5px white;
+  }
+}
 
 img {
     opacity: 0.5;
-    border-radius: 35%;
+    border-radius: 40%;
+
+    animation: glow 2s ease-in-out  infinite  alternate;
 }
 
 
