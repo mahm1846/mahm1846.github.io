@@ -1,0 +1,20 @@
+
+#footer-1 {
+
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+
+  color: white;
+  text-align: center;
+
+  height:60px;
+  clear:both;
+  position: relative;
+  background-color: #C1E3E1;
+  width: 100%;
+
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+

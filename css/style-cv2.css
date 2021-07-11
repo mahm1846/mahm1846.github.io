@@ -1,0 +1,122 @@
+
+body {
+  background: #D3D3D3;
+  
+  /*overflow: hidden;*/
+}
+
+
+#myDIV1 {
+  /*
+  width: 300px;
+  height: 200px;
+  */  
+  float: left;
+  margin-top: 50px;
+  padding-left:20px; 
+  padding-right:20px; 
+  height: auto;
+  width: 95%;
+  background-color: #F0F8FF; 
+
+  border: 2px solid black;
+  
+    
+}
+
+#myDIV1:hover {
+  animation: mymove1 5s infinite, mymove2 0.5s infinite;
+  
+}
+
+#myDIV2 {
+  /*
+  width: 300px;
+  height: 200px;
+  */  
+  float: left;
+  margin-top: 40px;
+  padding-left:20px; 
+  padding-right:20px; 
+
+  padding-bottom:20px; 
+  height: auto;
+  width: 95%;
+  background-color: #F0F8FF; 
+
+  justify-content: center;
+
+  border: 2px solid black;
+  transition: border-radius 1s, background-color 0.5s;
+    
+}
+
+#myDIV2:hover {
+  background-color: #B0E0E6;
+  border-radius: 40px ;
+  
+}
+
+
+#myDIV3 {
+  /*
+  width: 300px;
+  height: 200px;
+  */  
+  float: left;
+  margin-top: 20px;
+  padding-left:20px;
+  padding-right:20px; 
+  
+  padding-bottom:20px; 
+  height: auto;
+  width: 80%;
+  background-color: #FFEFD5; 
+
+  justify-content: center;
+
+  border: 2px solid black;
+  transition: border-radius 2s, background-color 0.5s;
+    
+}
+
+#myDIV3:hover {
+  background-color: #FFDAB9;
+  border-radius: 40px ;
+  
+}
+
+
+@keyframes mymove1 {
+   50% {border-radius: 40px;}
+}
+
+
+@keyframes mymove2 {
+  from {background-color: #F0F8FF;}
+  to {background-color: #FFF8DC;}
+}
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+h1 {
+  border-bottom-style: solid;
+  border-bottom-color: coral;
+ 
+}
+
+h2 {
+  border-bottom-style: solid;
+  border-bottom-color: coral;
+}
+
+h3 {
+  border-bottom-style: solid;
+  border-bottom-color: coral;
+  
+}

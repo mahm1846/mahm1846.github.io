@@ -1,0 +1,121 @@
+.thing {
+   
+   width: 2.5%; 
+   height: 166%; 
+   background:  #668284; 
+   margin-bottom: 0.0px;
+   opacity: 1;
+   border-radius: 0px ;
+  
+   float: left;
+
+   animation-name: pulse;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+}
+
+.thing:nth-child(1) {animation-delay: 0.0s; }
+.thing:nth-child(2) {animation-delay: 0.5s; }
+.thing:nth-child(3) {animation-delay: 1.5s; }
+.thing:nth-child(4) {animation-delay: 2.0s; }
+.thing:nth-child(5) {animation-delay: 2.5s; }
+.thing:nth-child(6) {animation-delay: 3.0s; }
+.thing:nth-child(7) {animation-delay: 3.5s; }
+.thing:nth-child(8) {animation-delay: 4.0s; }
+.thing:nth-child(9) {animation-delay: 4.5s; }
+.thing:nth-child(10) {animation-delay: 5.0s; }
+
+.thing:nth-child(11) {animation-delay: 5.5s; }
+.thing:nth-child(12) {animation-delay: 6.0s; }
+.thing:nth-child(13) {animation-delay: 6.5s; }
+.thing:nth-child(14) {animation-delay: 7.0s; }
+.thing:nth-child(15) {animation-delay: 7.5s; }
+.thing:nth-child(16) {animation-delay: 8.0s; }
+.thing:nth-child(17) {animation-delay: 8.5s; }
+.thing:nth-child(18) {animation-delay: 9.0s; }
+.thing:nth-child(19) {animation-delay: 9.5s; }
+.thing:nth-child(20) {animation-delay: 10.0s; }
+
+.thing:nth-child(21) {animation-delay: 10.5s; }
+.thing:nth-child(22) {animation-delay: 11.0s; }
+.thing:nth-child(23) {animation-delay: 11.5s; }
+.thing:nth-child(24) {animation-delay: 12.0s; }
+.thing:nth-child(25) {animation-delay: 12.5s; }
+.thing:nth-child(26) {animation-delay: 13.0s; }
+.thing:nth-child(27) {animation-delay: 13.5s; }
+.thing:nth-child(28) {animation-delay: 14.0s; }
+.thing:nth-child(29) {animation-delay: 14.5s; }
+.thing:nth-child(30) {animation-delay: 15.0s; }
+
+.thing:nth-child(31) {animation-delay: 15.5s; }
+.thing:nth-child(32) {animation-delay: 16.0s; }
+.thing:nth-child(33) {animation-delay: 16.5s; }
+.thing:nth-child(34) {animation-delay: 17.0s; }
+.thing:nth-child(35) {animation-delay: 17.5s; }
+.thing:nth-child(36) {animation-delay: 18.0s; }
+.thing:nth-child(37) {animation-delay: 18.5s; }
+.thing:nth-child(38) {animation-delay: 19.0s; }
+.thing:nth-child(39) {animation-delay: 19.5s; }
+.thing:nth-child(40) {animation-delay: 20.0s; }
+
+@keyframes pulse {
+  50% { opacity: 0;}
+}
+
+
+
+.typography-example-1 {
+ 
+    background-image: linear-gradient(175deg, #668284, #778899);
+    background-color:  #9d223c;
+    color: #fff;
+    padding: 0.5em 0;//1em 0;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    //padding-left: .4em;
+    font-size: 2.5em ; //3em; // 1.8em; 
+ 
+    margin-left: 25%;
+    height: 100%;
+    border-radius: 0px ;
+}
+
+.typography-example-1 span {
+    opacity: 0.01;
+    animation: mymove10 2600ms infinite;
+}
+
+
+/*.typography-example-1 span:nth-child(1)  { transition-delay:  200ms }*/
+.typography-example-1 span:nth-child(1)  { animation-delay:  200ms} 
+.typography-example-1 span:nth-child(2)  { animation-delay: 2400ms }
+.typography-example-1 span:nth-child(3)  { animation-delay: 1600ms }
+.typography-example-1 span:nth-child(4)  { animation-delay:  600ms }
+.typography-example-1 span:nth-child(5)  { animation-delay: 1400ms }
+.typography-example-1 span:nth-child(6)  { animation-delay:  200ms }
+.typography-example-1 span:nth-child(7)  { animation-delay: 2000ms }
+.typography-example-1 span:nth-child(8)  { animation-delay:  1800ms }
+.typography-example-1 span:nth-child(9)  { animation-delay:  1400ms }
+.typography-example-1 span:nth-child(10) { animation-delay:   100ms }
+
+.typography-example-1:hover span { opacity: 1}
+
+@keyframes mymove10 {
+   50% {opacity: 1;}
+}
+
+.container-cv {
+   width: 100%; //99%;
+   height: 60px ; //80px;
+   padding-top: 60px;// 61px;
+   
+}
+   
+.one {
+   width: 26%;
+   height:  100%;
+   //float: left;
+   float: left;
+}                
