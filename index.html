@@ -8,22 +8,32 @@
   <link rel="stylesheet" media="screen" href="../css/style-button.css">
   <link rel="stylesheet" media="screen" href="../css/style-landing-font.css">
 
+  <link rel="stylesheet" media="screen" href="../css/style-blockquote.css">
+ 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" media="screen" href="../css/style-landing-image.css">
+
+
+
+
 </head>
 <body>
-
-       
-  
 
        <!-- particles.js container -->
        <div id="particles-js">
        </div>
+      
+       <div class="locator" >
+       <div class="center">
+         <blockquote>I was born not knowing and have had only a little time to change that here and there.</blockquote>
+         <cite >Richard Feynman</cite>
+      </div>
+      </div>
 
-    
+
        <div class="heading">
 
-          <h1>Maruf Ahmed</h1>
+            <h1>Maruf Ahmed</h1>
             <h3>
                 Personal Portal
             </h3>
@@ -122,6 +132,29 @@
 <script src="../lib/app.js"></script>
 <script src="../lib/image-animation.js"></script>
 <script src="https://naver.github.io/egjs-jquery-pauseresume/release/latest/dist/pauseresume.js"></script>
+
+
+<style>
+.locator { position: absolute; visibility: visible; left: 0px; top: 0px; z-index: 0;  width:50% }
+//.locator { position: relative; visibility: visible; left: 0px; top: 0px; z-index: 0;  width:100%}
+
+.center {
+  margin: auto;
+  width: 0%;
+  //border: 3px solid #73AD21;
+  padding: 0px;
+  top: 0px;
+  //position: relative;
+  //position: absolute;
+}
+</style>
+
+<script>
+window.onload = function() {
+ var boxElement = document.getElementById('locator');
+ boxElement.style.left = window.outerHeight/2;
+ } 
+</script>
 
 
 </body>
