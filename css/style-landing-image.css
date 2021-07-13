@@ -120,6 +120,34 @@ div.f {
 }
 
 
+div.g {
+   width: 25px;
+   height:25px;
+   position:fixed;
+   border-radius: 25px;
+   transition: width 1s, height 1s;
+}
+.g:hover {
+   opacity: 1;
+   width: 100px;
+   height:100px;
+}
+
+div.h {
+   width: 25px;
+   height:25px;
+   position:fixed;
+   border-radius: 25px;
+   transition: width 1s, height 1s;
+}
+.h:hover {
+   opacity: 1;
+   width: 100px;
+   height:100px;
+}
+
+
+
 @keyframes delayedShow {
     100% {visibility: visible;}
 }
