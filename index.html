@@ -12,6 +12,12 @@
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" media="screen" href="../css/style-landing-image.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style-media-button.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -20,6 +26,37 @@
        <div id="particles-js">
        </div>
       
+       
+      <div class="social-buttons">
+          <a href="https://www.linkedin.com/in/maruf-ahmed-a6861255/"  target="_blank">
+          <button class="neo-button">
+              <i class="fa fa-linkedin fa-3x"></i> 
+          </button>
+          </a>  
+
+          <a href="https://gitlab.com/algorithm65/introduction-to-algorithms"  target="_blank">   
+          <button class="neo-button">
+              <i class="fa fa-gitlab fa-3x"  aria-hidden="true"></i> 
+          </button> 
+          </a> 
+ 
+          <a href="https://github.com/mahm1846/cpp_Projects/tree/master/Data_Structures"  target="_blank">
+          <button class="neo-button">
+              <i class="fa fa-github fa-3x"></i> 
+          </button>
+          </a>   
+   
+          <a href="mailto:mahm1846@uni.sydney.edu.au"  target="_blank">
+          <button class="neo-button">
+              <i class="fa fa-envelope fa-3x"></i> 
+          </button>
+          </a>   
+  
+       </div>
+
+
+       
+
        <div class="centeredDiv" >
           <blockquote>I was born not knowing and have had only a little time to change that here and there.</blockquote>
           <cite >Richard Feynman</cite>
@@ -158,18 +195,27 @@
   top: 0px;
   position: relative;
 }
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+
+
 </style>
 
 <script>
 
 $(".centeredDiv").parent().css({position: 'relative'});
 $(".centeredDiv").css({top: 1, left: $(window).width()/2 - $( "blockquote" ).width()/2 , position:'absolute'});
+$(".social-buttons").css({top: 100, left: $(window).width() - 73 , position:'absolute'});
 
 $(document).ready(function() {
          $(window).resize(function() {
               $(".centeredDiv").css({top: 1, left: $(window).width()/2 - $( "blockquote" ).width()/2 });
+              $(".social-buttons").css({top: 100, left: $(window).width() - 90});
       });
 });
+
 
 </script>
 
