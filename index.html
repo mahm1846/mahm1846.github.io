@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title> Maruf Ahmed </title>
-  
+  <!--   -->
   <link rel="stylesheet" media="screen" href="../css/style-landing.css">
   <link rel="stylesheet" media="screen" href="../css/style-button.css">
+  <!--  -->
   <link rel="stylesheet" media="screen" href="../css/style-landing-font.css">
-
+  <!-- -->
   <link rel="stylesheet" media="screen" href="../css/style-blockquote.css">
- 
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" media="screen" href="../css/style-landing-image.css">
 
@@ -22,42 +23,41 @@
 
 <body>
 
-       <!-- particles.js container -->
-       <div id="particles-js">
-       </div>
+      <!-- particles.js container -->
+      <div id="particles-js">
+      </div>
       
        
       <div class="social-buttons">
-          <a href="https://www.linkedin.com/in/maruf-ahmed-a6861255/"  target="_blank">
-          <button class="neo-button">
+
+          <a href="window.location.href="https://www.linkedin.com/in/maruf-ahmed-a6861255/">
+          <button class="neo-button"  >
               <i class="fa fa-linkedin fa-3x"></i> 
+          </button>
+          </a> 
+
+          <a href="https://gitlab.com/algorithm65/introduction-to-algorithms">
+          <button class="neo-button" >
+              <i class="fa fa-gitlab fa-3x"  aria-hidden="true">   </i> 
+          </button> 
+          </a>
+ 
+          <a href="https://github.com/mahm1846/cpp_Projects/tree/master/Data_Structures"  target="_blank">
+          <button class="neo-button" >
+              <i class="fa fa-github fa-3x"></i> 
           </button>
           </a>  
 
-          <a href="https://gitlab.com/algorithm65/introduction-to-algorithms"  target="_blank">   
-          <button class="neo-button">
-              <i class="fa fa-gitlab fa-3x"  aria-hidden="true"></i> 
-          </button> 
-          </a> 
- 
-          <a href="https://github.com/mahm1846/cpp_Projects/tree/master/Data_Structures"  target="_blank">
-          <button class="neo-button">
-              <i class="fa fa-github fa-3x"></i> 
-          </button>
-          </a>   
-   
-          <a href="mailto:mahm1846@uni.sydney.edu.au"  target="_blank">
+         <a href="mailto:mahm1846@uni.sydney.edu.au"  target="_blank">
           <button class="neo-button">
               <i class="fa fa-envelope fa-3x"></i> 
-          </button>
-          </a>   
-  
-       </div>
+         </button>
+         </a>    
+   
+     </div>
 
 
-       
-
-       <div class="centeredDiv" >
+     <div class="centeredDiv" >
           <blockquote>I was born not knowing and have had only a little time to change that here and there.</blockquote>
           <cite >Richard Feynman</cite>
        </div>
@@ -185,7 +185,8 @@
 
 
 <style>
-//#locator { position: absolute; visibility: visible; left: 0px; top: 0px; z-index: 0;  width:50% }
+/**/
+#locator { position: absolute; visibility: visible; left: 0px; top: 0px; z-index: 0;  width:50% }
 
 .centeredDiv {
   margin: auto;
@@ -195,6 +196,7 @@
   top: 0px;
   position: relative;
 }
+/**/
 
 body {
   overflow: hidden; /* Hide scrollbars */
@@ -207,13 +209,19 @@ body {
 
 $(".centeredDiv").parent().css({position: 'relative'});
 $(".centeredDiv").css({top: 1, left: $(window).width()/2 - $( "blockquote" ).width()/2 , position:'absolute'});
-$(".social-buttons").css({top: 100, left: $(window).width() - 73 , position:'absolute'});
+
+$(".social-buttons").css({top: 100, left: $(window).width() - 90 , position:'absolute'});
 
 $(document).ready(function() {
-         $(window).resize(function() {
+      $(window).resize(function() {
               $(".centeredDiv").css({top: 1, left: $(window).width()/2 - $( "blockquote" ).width()/2 });
               $(".social-buttons").css({top: 100, left: $(window).width() - 90});
+       });
+      /***
+      $(".social-buttons").click(function() {
+        $(".social-buttons").css({top: 0, left: 0});
       });
+      ***/
 });
 
 
