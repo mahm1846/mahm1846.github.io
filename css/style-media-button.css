@@ -17,9 +17,7 @@ body {
     width:60px;
     right: 0;
     position: absolute;
-    //position: relative;
-    
-    resize: both; 
+    z-index: 200;
 }
 
 .social-buttons button {
@@ -52,6 +50,8 @@ body {
     
 }
 
+
 .neo-button .fa {
     color: #eee;
 }
+

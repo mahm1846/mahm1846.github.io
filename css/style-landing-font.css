@@ -6,6 +6,7 @@ body {
 }
 .heading {
     position: absolute;
+    //position: relative;
     text-align: center;
     top: 30%;
     width: 100%;
