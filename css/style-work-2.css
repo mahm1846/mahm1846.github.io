@@ -7,7 +7,7 @@ div {
     z-index: 1;
     height:60px;
     width: 100%;
-    background-color: #668284;
+    background-color:   #4682B4; //#668284;
     margin-bottom: 0px
     overflow: auto;
     }
