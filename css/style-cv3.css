@@ -2,7 +2,7 @@
    
    width: 2.5%; 
    height: 166%; 
-   background: #668284; 
+   background: SteelBlue; //  #668284; 
    margin-bottom: 0.0px;
    opacity: 1;
    border-radius: 0px ;
@@ -67,9 +67,10 @@
 .typography-example-1 {
  
     //background-image: linear-gradient(175deg, #668284, #778899);
-    background-image: linear-gradient(120deg, #668284, #778899);
+    //background-image: linear-gradient(120deg, #668284, #778899);
+    background-image: linear-gradient(120deg, #4682B4, DarkSlateBlue);
     
-    background-color: #668284; // #9d223c; 
+    background-color: SteelBlue; // #668284; // #9d223c; 
     color: #fff;
     padding: 0.5em 0;//1em 0;
     text-align: center;
