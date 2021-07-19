@@ -7,7 +7,7 @@ div {
     z-index: 1;
     height:60px;
     width: 99%; //98%;
-    background-color: #668284;
+    background-color: #4682B4;  // #668284; //#FFFAFA
     margin-bottom: 0px
     overflow: auto;
     }
@@ -57,7 +57,7 @@ a:hover {
 
     height: auto;
     width: 100%;//99%;
-    background-color:#E3EDDE;
+    background-color: #B0E0E6; //   #E3EDDE;
     justify-content: center;
     }
 

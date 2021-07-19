@@ -1,6 +1,6 @@
 
 body {
-  background: #D3D3D3;
+  background: #B0E0E6 ; // PowderBlue ;//  #D3D3D3;
   
   /*overflow: hidden;*/
 }
@@ -17,7 +17,7 @@ body {
   padding-right:20px; 
   height: auto;
   width: 95%;
-  background-color: #F0F8FF; 
+  //background-color: //#B0E0E6; // #F0F8FF; 
 
   border: 2px solid black;
   
