@@ -12,6 +12,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Asif",
         "mag": 1.6,
         "place": "Kodiak Island region, Alaska",
         "time": 1662270289462,
@@ -52,6 +53,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Saifur",
         "mag": 2.2,
         "place": "13 km NW of Mina, Nevada",
         "time": 1662269995054,
