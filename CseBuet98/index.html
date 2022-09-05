@@ -1,1 +1,82 @@
+<html>
+<head>
+  	<title>Pathik 98</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   	integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   	crossorigin=""/>
 
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   	integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   	crossorigin=""></script>
+	
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+  
+	<style>
+	//    #map{ height: 100% }
+    	body { margin:0; padding:0; }
+    	#map { position: absolute; top:0; bottom:0; right:0; left:0; }
+	</style>
+</head>
+
+<body>
+
+  <div id="map"></div>
+
+  <script>
+
+	var map = L.map('map', {
+		minZoom: 2,
+		maxZoom: 20,
+	});
+
+ 	/* Control panel to display map layers */
+  	var controlLayers = L.control.layers( null, null, {
+  	  position: "topright",
+  	  collapsed: false
+  	}).addTo(map);
+
+ 	 // display Carto basemap tiles with light features and labels
+ 	 var light = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+   	 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
+ 	 }).addTo(map); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
+ 	 controlLayers.addBaseLayer(light, 'Carto Light basemap');
+
+	map.setView([5, 0], 0);
+
+
+	//let capitals = 
+	//[{"CountryName":"Somaliland","CapitalName":"Hargeisa","CapitalLatitude":"9.55","CapitalLongitude":"44.050000",
+	//  "CountryCode":"NULL","ContinentName":"Africa"},
+	//{"CountryName":"South Georgia and South Sandwich Islands","CapitalName":"King Edward Point",
+	// "CapitalLatitude":"-54.283333","CapitalLongitude":"-36.500000","CountryCode":"GS","ContinentName":"Antarctica"},
+	//{"CountryName":"French Southern and Antarctic Lands","CapitalName":"Port-aux-FranÃƒÂ§ais","CapitalLatitude":"-49.35",
+	// "CapitalLongitude":"70.216667","CountryCode":"TF","ContinentName":"Antarctica"}];
+
+	//capitals.forEach(capital => {
+  	// L.marker([capital.CapitalLatitude, capital.CapitalLongitude]).addTo(map);
+	//})
+            
+       
+        //console.log("Hello world!");
+		 //https://raw.githubusercontent.com/mahm1846/mahm1846.github.io/main/CseBuet98/data.geojason
+	$.getJSON("https://raw.githubusercontent.com/mahm1846/mahm1846.github.io/main/CseBuet98/data.geojason", function(data) { addDataToMap(data, map); });
+
+	function addDataToMap(data, map) {
+	    var dataLayer = L.geoJson(data, {
+	        onEachFeature: function(feature, layer) {
+	            var popupText = "Name: " + feature.properties.name
+	                + "<br>Location: " + feature.properties.place
+	                + "<br><a href='" + feature.properties.url + "'>More info</a>";
+	            layer.bindPopup(popupText); }
+	        });
+	    dataLayer.addTo(map);
+	}
+
+	map.attributionControl.setPrefix(
+  	  '<a href="https://www.marufahmed.dev" target="_blank">MarufAhmed.dev</a>'
+	);
+
+  </script>
+</body>
+</html>
